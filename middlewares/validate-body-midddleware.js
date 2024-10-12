@@ -1,4 +1,3 @@
-import Joi from "joi";
 import { setResponseRaw } from "../util/common-response.js";
 
 function sendErrorResponse(res, e) {
@@ -6,12 +5,11 @@ function sendErrorResponse(res, e) {
 	return setResponseRaw(res, 400, jsonResp);
 }
 
-const schema = Joi.object({
-	url: Joi.string().uri().required(),
-	pins: Joi.number().required(),
-});
-
-export const validateBodyMiddleware = (req, res, next) => {
+export const validateBodyMiddleware = async (req, res, next) => {
+	console.log(req.path);
+	const schemaPath = req.path.split("/").slice(1, 3).join("-");
+	const schemaModule = await import(`../schemas/${schemaPath}.js`);
+	const schema = schemaModule.default;
 	const { error } = schema.validate(req.body);
 
 	if (error) {

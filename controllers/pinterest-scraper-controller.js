@@ -1,4 +1,4 @@
-import scraperService from "../services/scraper-services.js";
+import scraperService from "../services/pinterest-scraper-services.js";
 
 const scrape = async (req, res) => {
 	const { body } = req;
