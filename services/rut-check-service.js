@@ -25,17 +25,29 @@ const rutCheckService = async (rut) => {
 		await page.fill("#EFXP_RUT_RECEP", rut.split("-")[0]);
 		await page.fill("#EFXP_DV_RECEP", rut.split("-")[1]);
 		await page.keyboard.press("Tab");
-		await page.waitForTimeout(2000);
+
+		await page.waitForResponse(
+			(response) =>
+				response
+					.url()
+					.includes(
+						"https://siteintercept.qualtrics.com/WRSiteInterceptEngine/Targeting.php?Q_ZoneID=ZN_d7pgyLBlORbDEfs&Q_CLIENTVERSION=2.16.3&Q_CLIENTTYPE=web",
+					) && response.status() === 200,
+		);
+
+		await page.waitForLoadState("networkidle");
+		await page.waitForSelector('[name="EFXP_RZN_SOC_RECEP"]:not([value=""])');
 		const name = await page.$eval(
 			'[name="EFXP_RZN_SOC_RECEP"]',
 			(el) => el.value,
 		);
 		console.log("name: ", name);
-		await browser.close();
 		return { name: name };
 	} catch (error) {
 		console.log("Error: ", error);
 		return error;
+	} finally {
+		await browser.close();
 	}
 };
 
