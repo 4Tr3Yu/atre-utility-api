@@ -31,7 +31,7 @@ sudo apt-get install libatk1.0-0t64\
  ```
 ## API Routes
 
-### Pinteret
+### Pinterest
 ```POST /api/scrape/pinterest```
 - Description: Scrapes a Pinterest board for a specified number of images.
 - Request Body:
