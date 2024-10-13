@@ -18,10 +18,30 @@ const rutCheckService = async (rut) => {
 		await page.fill("#clave", password);
 		await page.click("#bt_ingresar");
 		await page.goto(onlineServicesURL, { waitUntil: "load" });
-		await page.goto(dteURL, { waitUntil: "load" });
+
+		page.on("framenavigated", (frame) => {
+			console.log("Page navigated to:", frame.url());
+		});
+		page.on("console", (msg) => console.log("PAGE LOG:", msg.text()));
+		page.on("dialog", async (dialog) => {
+			console.log("Dialog message:", dialog.message());
+			await dialog.dismiss(); // or dialog.accept()
+		});
+
+		await page.goto(dteURL, { waitUntil: "load", timeout: 60000 });
+		await page.screenshot({ path: "page-debug.png", fullPage: true });
+
+		page.on("framenavigated", (frame) => {
+			console.log("Page navigated to:", frame.url());
+		});
+		page.on("console", (msg) => console.log("PAGE LOG:", msg.text()));
+		page.on("dialog", async (dialog) => {
+			console.log("Dialog message:", dialog.message());
+			await dialog.dismiss(); // or dialog.accept()
+		});
 
 		console.log("logged in");
-
+		await page.waitForSelector("#EFXP_RUT_RECEP", { timeout: 10000 });
 		await page.fill("#EFXP_RUT_RECEP", rut.split("-")[0]);
 		console.log("filled rut");
 		await page.fill("#EFXP_DV_RECEP", rut.split("-")[1]);
