@@ -8,7 +8,7 @@ This Node.js service uses Playwright to scrape images from Pinterest boards dyna
 - **Playwright**: The service uses Playwright for browser automation. Install Playwright via npm:
 
 ```bash
-  npm install playwright
+npm install playwright
 ```
 Comands for installing browser:
 ```bash
@@ -16,18 +16,18 @@ npx playwright install
 ```
 
 ```bash
-	sudo npx playwright install-deps
+sudo npx playwright install-deps
 ```
 Alternatively, use apt:   
 ```bash                           
-     sudo apt-get install libatk1.0-0t64\             
-         libatk-bridge2.0-0t64\                       
-         libcups2t64\                                 
-         libxdamage1\                                 
-         libpango-1.0-0\                              
-         libcairo2\                                   
-         libasound2t64\                               
-	     libatspi2.0-0t64  
+sudo apt-get install libatk1.0-0t64\             
+	libatk-bridge2.0-0t64\                       
+	libcups2t64\                                 
+	libxdamage1\                                 
+	libpango-1.0-0\                              
+	libcairo2\                                   
+	libasound2t64\                               
+	libatspi2.0-0t64  
  ```
 ## API Routes
 
