@@ -23,9 +23,11 @@ const rutCheckService = async (rut) => {
 		console.log("logged in");
 
 		await page.fill("#EFXP_RUT_RECEP", rut.split("-")[0]);
+		console.log("filled rut");
 		await page.fill("#EFXP_DV_RECEP", rut.split("-")[1]);
+		console.log("filled dv");
 		await page.keyboard.press("Tab");
-
+		console.log("pressed tab");
 		await page.waitForResponse(
 			(response) =>
 				response
