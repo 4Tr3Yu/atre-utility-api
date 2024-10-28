@@ -3,11 +3,12 @@ import { chromium } from "playwright";
 const rutificadorURL = "https://www.rutificador.co/rut/buscar/?f=";
 
 const rutCheckService = async (rut) => {
-	const browser = await chromium.launch({ headless: true });
+	const browser = await chromium.launch({ headless: false });
 	const context = await browser.newContext();
 	const page = await context.newPage();
 	const rutURL = rutificadorURL + rut;
 	try {
+		await page.goto(rutURL, { waitUntil: "load" });
 		const blockedUrls = [
 			"https://sympathizecrewfrugality.com",
 			"https://www.google-analytics.com",
@@ -49,7 +50,7 @@ const rutCheckService = async (rut) => {
 				route.continue(); // Allow the request
 			}
 		});
-		await page.goto(rutURL, { waitUntil: "load" });
+
 		await page.waitForLoadState("networkidle");
 		console.log("Page loaded");
 		// await page.waitForSelector("tbody.rs>tr>td");
