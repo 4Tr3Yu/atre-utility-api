@@ -53,13 +53,19 @@ const rutCheckService = async (rut) => {
 		await page.waitForLoadState("networkidle");
 		await page.waitForSelector("tbody.rs>tr>td");
 		const name = await page.$eval("tbody.rs>tr>td", (el) => el.textContent);
-		console.log("name: ", name);
-		return { name: name };
+		const nameParts = name.split(" ");
+		return {
+			full: name,
+			first: nameParts[2],
+			last: nameParts[0],
+			middle: nameParts[3],
+			secondLast: nameParts[1],
+		};
 	} catch (error) {
 		console.log("Error: ", error);
 		return error;
 	} finally {
-		//await browser.close();
+		await browser.close();
 	}
 };
 
