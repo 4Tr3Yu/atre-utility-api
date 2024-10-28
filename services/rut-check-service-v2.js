@@ -3,7 +3,7 @@ import { chromium } from "playwright";
 const rutificadorURL = "https://www.rutificador.co/rut/buscar/?f=";
 
 const rutCheckService = async (rut) => {
-	const browser = await chromium.launch({ headless: false });
+	const browser = await chromium.launch({ headless: true });
 	const context = await browser.newContext();
 	const page = await context.newPage();
 	const rutURL = rutificadorURL + rut;
