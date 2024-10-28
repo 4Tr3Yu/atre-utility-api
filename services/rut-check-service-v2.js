@@ -51,8 +51,10 @@ const rutCheckService = async (rut) => {
 		});
 		await page.goto(rutURL, { waitUntil: "load" });
 		await page.waitForLoadState("networkidle");
-		await page.waitForSelector("tbody.rs>tr>td");
+		console.log("Page loaded");
+		// await page.waitForSelector("tbody.rs>tr>td");
 		const name = await page.$eval("tbody.rs>tr>td", (el) => el.textContent);
+		console.log("eval complete");
 		const nameParts = name.split(" ");
 		return {
 			full: name,
