@@ -1,4 +1,4 @@
-import rutCheckService from "../services/rut-check-service.js";
+import rutCheckService from "../services/rut-check-service-v2.js";
 
 const checkRut = async (req, res) => {
 	const { body } = req;
