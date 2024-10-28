@@ -9,8 +9,8 @@ const rutCheckService = async (rut) => {
 	const rutURL = rutificadorURL + rut;
 	try {
 		await page.goto(rutURL, { waitUntil: "load" });
-		/* const blockedUrls = [
-			"https://sympathizecrewfrugality.com",
+		const blockedUrls = [
+			/* "https://sympathizecrewfrugality.com",
 			"https://www.google-analytics.com",
 			"https://cdn.creative-stat1.com",
 			"https://cdn.show-sb.com",
@@ -39,9 +39,9 @@ const rutCheckService = async (rut) => {
 			"pxf.",
 			"cdn.",
 			"ren.",
-			"impr.",
+			"impr.", */
 		];
- */
+
 		await page.route("**/*", (route) => {
 			const url = route.request().url();
 			if (blockedUrls.some((blockedUrl) => url.includes(blockedUrl))) {
