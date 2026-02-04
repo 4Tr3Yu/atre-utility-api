@@ -1,0 +1,246 @@
+{
+  "format": "standard",
+  "scrapedAt": "2026-02-04T11:26:06.496Z",
+  "decks": [
+    {
+      "name": "Simic Ouroboroid",
+      "percentage": 14.7
+    },
+    {
+      "name": "Izzet Lessons",
+      "percentage": 13.1
+    },
+    {
+      "name": "Dimir Midrange",
+      "percentage": 8.5
+    },
+    {
+      "name": "Jeskai Control",
+      "percentage": 8.2
+    },
+    {
+      "name": "Mono-Red Aggro",
+      "percentage": 5
+    },
+    {
+      "name": "Sultai Reanimator",
+      "percentage": 4.2
+    },
+    {
+      "name": "Selesnya Landfall",
+      "percentage": 3.6
+    },
+    {
+      "name": "Bant Airbending Combo",
+      "percentage": 3.4
+    },
+    {
+      "name": "Boros Aggro",
+      "percentage": 2.7
+    },
+    {
+      "name": "4c Reanimator",
+      "percentage": 2.7
+    },
+    {
+      "name": "Mono-Green Landfall",
+      "percentage": 2
+    },
+    {
+      "name": "Izzet Looting",
+      "percentage": 1.9
+    },
+    {
+      "name": "Temur Lessons",
+      "percentage": 1.6
+    },
+    {
+      "name": "Izzet Self-Bounce",
+      "percentage": 1.5
+    },
+    {
+      "name": "Azorius Control",
+      "percentage": 1.4
+    },
+    {
+      "name": "Allies",
+      "percentage": 1.2
+    },
+    {
+      "name": "Boros Dragons",
+      "percentage": 1.1
+    },
+    {
+      "name": "Jeskai Artifacts",
+      "percentage": 1
+    },
+    {
+      "name": "4c Toolbox",
+      "percentage": 1
+    },
+    {
+      "name": "Esper Self-Bounce",
+      "percentage": 1
+    },
+    {
+      "name": "Golgari Midrange",
+      "percentage": 0.8
+    },
+    {
+      "name": "Izzet Prowess",
+      "percentage": 0.8
+    },
+    {
+      "name": "Mono-Red Leyline Aggro",
+      "percentage": 0.8
+    },
+    {
+      "name": "4c Control",
+      "percentage": 0.8
+    },
+    {
+      "name": "Bant Omniscience",
+      "percentage": 0.6
+    },
+    {
+      "name": "Azorius Tempo",
+      "percentage": 0.6
+    },
+    {
+      "name": "Golgari Ouroboroid",
+      "percentage": 0.6
+    },
+    {
+      "name": "Temur Ouroboroid",
+      "percentage": 0.6
+    },
+    {
+      "name": "Sultai Elementals",
+      "percentage": 0.5
+    },
+    {
+      "name": "5c Control",
+      "percentage": 0.4
+    },
+    {
+      "name": "Dimir Self-Bounce",
+      "percentage": 0.4
+    },
+    {
+      "name": "Boros Burn",
+      "percentage": 0.4
+    },
+    {
+      "name": "Temur Kona",
+      "percentage": 0.4
+    },
+    {
+      "name": "Bant Ouroboroid",
+      "percentage": 0.3
+    },
+    {
+      "name": "Jeskai Self-Bounce",
+      "percentage": 0.3
+    },
+    {
+      "name": "Dimir Control",
+      "percentage": 0.3
+    },
+    {
+      "name": "Orzhov Midrange",
+      "percentage": 0.3
+    },
+    {
+      "name": "4c Omniscience",
+      "percentage": 0.3
+    },
+    {
+      "name": "Sultai Ouroboroid",
+      "percentage": 0.3
+    },
+    {
+      "name": "Boros Manufacturing",
+      "percentage": 0.3
+    },
+    {
+      "name": "Temur Stormsplitter",
+      "percentage": 0.3
+    },
+    {
+      "name": "Temur Floodcaller Combo",
+      "percentage": 0.2
+    },
+    {
+      "name": "Gruul Ouroboroid",
+      "percentage": 0.2
+    },
+    {
+      "name": "Rakdos Monument",
+      "percentage": 0.2
+    },
+    {
+      "name": "Gruul Delirium",
+      "percentage": 0.2
+    },
+    {
+      "name": "Lifegain",
+      "percentage": 0.2
+    },
+    {
+      "name": "4c Elementals",
+      "percentage": 0.2
+    },
+    {
+      "name": "Mono-Green Aggro",
+      "percentage": 0.2
+    },
+    {
+      "name": "Gruul Landfall",
+      "percentage": 0.2
+    },
+    {
+      "name": "Temur Landfall",
+      "percentage": 0.2
+    },
+    {
+      "name": "Mardu Control",
+      "percentage": 0.2
+    },
+    {
+      "name": "Mono-Black Midrange",
+      "percentage": 0.2
+    },
+    {
+      "name": "Esper Control",
+      "percentage": 0.2
+    },
+    {
+      "name": "Gruul Leyline Aggro",
+      "percentage": 0.2
+    },
+    {
+      "name": "Dimir Faeries",
+      "percentage": 0.2
+    },
+    {
+      "name": "Boros Mice",
+      "percentage": 0.2
+    },
+    {
+      "name": "Mono-White Token Control",
+      "percentage": 0.2
+    },
+    {
+      "name": "Temur Battlecrier Combo",
+      "percentage": 0.2
+    },
+    {
+      "name": "Temur Elementals",
+      "percentage": 0.2
+    },
+    {
+      "name": "Esper Midrange",
+      "percentage": 0.2
+    }
+  ]
+}

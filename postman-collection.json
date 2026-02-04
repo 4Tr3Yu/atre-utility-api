@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "atre-utility-api-collection",
+		"name": "Atre Utility API",
+		"description": "API collection for Atre Utility API - web scraping services",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	],
+	"item": [
+		{
+			"name": "Scrape",
+			"item": [
+				{
+					"name": "Scrape Pinterest Board",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"url\": \"https://www.pinterest.com/username/board-name\",\n\t\"pins\": 10\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/scrape/pinterest",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "scrape", "pinterest"]
+						},
+						"description": "Scrapes images from a Pinterest board using Playwright.\n\n**Parameters:**\n- `url` (required): Pinterest board URL\n- `pins` (required): Number of pins to scrape (integer)"
+					},
+					"response": []
+				},
+				{
+					"name": "Check RUT",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"rut\": \"12345678-9\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/scrape/rut",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "scrape", "rut"]
+						},
+						"description": "Chilean RUT lookup service.\n\n**Parameters:**\n- `rut` (required): Chilean RUT number to check"
+					},
+					"response": []
+				},
+				{
+					"name": "Scrape MTG Metagame",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"format\": \"standard\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/scrape/mtg-metagame",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "scrape", "mtg-metagame"]
+						},
+						"description": "Scrapes MTG Goldfish metagame data and saves to data/metagame/{format}.json.\n\n**Parameters:**\n- `format` (required): One of: `standard`, `modern`, `pioneer`, `pauper`, `legacy`, `vintage`"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Metagame",
+			"item": [
+				{
+					"name": "Get Metagame by Format",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/metagame/:format",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "metagame", ":format"],
+							"variable": [
+								{
+									"key": "format",
+									"value": "standard",
+									"description": "MTG format: standard, modern, pioneer, pauper, legacy, or vintage"
+								}
+							]
+						},
+						"description": "Returns saved metagame JSON for a specific MTG format.\n\n**Path Parameters:**\n- `format`: One of: `standard`, `modern`, `pioneer`, `pauper`, `legacy`, `vintage`"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Documentation",
+			"item": [
+				{
+					"name": "Get API Docs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/docs",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "docs"]
+						},
+						"description": "Returns API documentation rendered as HTML (EJS template)."
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

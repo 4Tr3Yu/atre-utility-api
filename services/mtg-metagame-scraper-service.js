@@ -1,6 +1,6 @@
-import { chromium } from "playwright";
 import fs from "fs/promises";
 import path from "path";
+import { chromium } from "playwright";
 import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -17,28 +17,29 @@ const mtgMetagameScraperService = async (format) => {
 	const url = buildMetagameUrl(format);
 
 	try {
-		await page.goto(url, { waitUntil: "load" });
-		await page.waitForLoadState("networkidle");
+		await page.goto(url, { waitUntil: "domcontentloaded" });
+		await page.waitForSelector(".archetype-tile", { timeout: 30000 });
 
 		// TODO: Add selectors for MTG Goldfish metagame page
 		// The page structure has deck tiles with name and percentage
 		// Example selectors (adjust based on actual page structure):
-		const decks = await page.$$eval(
-			".archetype-tile",
-			(tiles) => {
-				return tiles.map((tile) => {
-					// TODO: Adjust these selectors based on actual page structure
-					const nameEl = tile.querySelector(".archetype-tile-title");
-					const percentEl = tile.querySelector(".archetype-tile-statistic");
+		const decks = await page.$$eval(".archetype-tile", (tiles) => {
+			return tiles.map((tile) => {
+				const nameEl = tile.querySelector(
+					".archetype-tile-title .deck-price-paper a",
+				);
+				const percentEl = tile.querySelector(
+					".metagame-percentage .archetype-tile-statistic-value",
+				);
 
-					const name = nameEl?.textContent?.trim() || "Unknown";
-					const percentText = percentEl?.textContent?.trim() || "0%";
-					const percentage = parseFloat(percentText.replace("%", "")) || 0;
+				const name = nameEl?.textContent?.trim() || "Unknown";
+				const percentText =
+					percentEl?.childNodes[0]?.textContent?.trim() || "0%";
+				const percentage = parseFloat(percentText.replace("%", "")) || 0;
 
-					return { name, percentage };
-				});
-			},
-		);
+				return { name, percentage };
+			});
+		});
 
 		const result = {
 			format,
