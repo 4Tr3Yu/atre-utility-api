@@ -76,7 +76,21 @@ sudo apt-get install libatk1.0-0t64\
 - Description: Returns saved metagame data for a given format.
 - URL Parameter:
 	- ```format``` (string): MTG format - standard, modern, pioneer, pauper, legacy, vintage
-- Response: Same as scraper response (reads from saved JSON file).
+- Response: Filtered deck data (excludes count, image, archetypeUrl):
+```json
+{
+  "format": "standard",
+  "scrapedAt": "2024-02-04T12:00:00.000Z",
+  "decks": [
+    {
+      "name": "Simic Ouroboroid",
+      "percentage": 14.7,
+      "colors": ["U", "G"],
+      "keyCards": ["Ouroboroid", "Badgermole Cub", "Quantum Riddler"]
+    }
+  ]
+}
+```
 
 #### Cron Job
 The metagame scraper can run automatically on a schedule. To enable:

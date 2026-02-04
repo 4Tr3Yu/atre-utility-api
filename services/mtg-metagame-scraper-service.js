@@ -107,7 +107,12 @@ export const getMetagameFromFile = async (format) => {
 	const filePath = path.join(DATA_DIR, `${format}.json`);
 	try {
 		const data = await fs.readFile(filePath, "utf-8");
-		return JSON.parse(data);
+		const parsed = JSON.parse(data);
+
+		// Filter out count, image, and archetypeUrl from response
+		const decks = parsed.decks.map(({ count, image, archetypeUrl, ...rest }) => rest);
+
+		return { ...parsed, decks };
 	} catch (error) {
 		if (error.code === "ENOENT") {
 			return null;

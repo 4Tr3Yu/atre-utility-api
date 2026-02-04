@@ -112,7 +112,7 @@
 								}
 							]
 						},
-						"description": "Returns saved metagame JSON for a specific MTG format.\n\n**Path Parameters:**\n- `format`: One of: `standard`, `modern`, `pioneer`, `pauper`, `legacy`, `vintage`"
+						"description": "Returns saved metagame JSON for a specific MTG format (filtered response).\n\n**Path Parameters:**\n- `format`: One of: `standard`, `modern`, `pioneer`, `pauper`, `legacy`, `vintage`\n\n**Response includes:**\n- `name`: Deck archetype name\n- `percentage`: Meta share %\n- `colors`: Array of colors (WUBRG)\n- `keyCards`: Top 3 cards in the deck"
 					},
 					"response": []
 				}
