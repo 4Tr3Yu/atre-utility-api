@@ -1,2 +1,200 @@
-<h1>Pinterest Scraper - Documentation</h1>
-<p>Need to find some standars</p>
+<h1 class="text-3xl font-bold mb-2">API Documentation</h1>
+<p class="text-gray-400 text-lg mb-8">Personal utility endpoints for web scraping services.</p>
+
+<h2 class="text-xl font-semibold mt-10 mb-6 pb-3 border-b border-dark-border">Endpoints</h2>
+
+<!-- Pinterest Scraper -->
+<div class="bg-dark-secondary border border-dark-border rounded-lg mb-6 overflow-hidden">
+    <div class="bg-dark-tertiary border-b border-dark-border px-5 py-4 flex items-center gap-4">
+        <span class="bg-green-500 text-black font-bold text-xs px-2.5 py-1 rounded uppercase">POST</span>
+        <code class="text-gray-200 font-mono">/api/scrape/pinterest</code>
+    </div>
+    <div class="p-5">
+        <p class="text-gray-400 mb-4">Scrapes images from a Pinterest board. Automatically scrolls to load more content if needed.</p>
+
+        <h4 class="text-sm font-semibold text-gray-300 uppercase tracking-wide mb-3">Request Body</h4>
+        <table class="w-full text-sm mb-4">
+            <thead>
+                <tr class="text-gray-500 text-xs uppercase tracking-wide">
+                    <th class="text-left py-2 pr-4">Parameter</th>
+                    <th class="text-left py-2 pr-4">Type</th>
+                    <th class="text-left py-2">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-t border-dark-border">
+                    <td class="py-3 pr-4"><code class="text-purple-400">url</code> <span class="text-red-400 text-xs font-semibold">required</span></td>
+                    <td class="py-3 pr-4 text-orange-400">string</td>
+                    <td class="py-3 text-gray-400">Pinterest board URL (e.g., https://pinterest.com/username/board)</td>
+                </tr>
+                <tr class="border-t border-dark-border">
+                    <td class="py-3 pr-4"><code class="text-purple-400">pins</code> <span class="text-red-400 text-xs font-semibold">required</span></td>
+                    <td class="py-3 pr-4 text-orange-400">integer</td>
+                    <td class="py-3 text-gray-400">Number of images to scrape</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4 class="text-sm font-semibold text-gray-300 uppercase tracking-wide mb-3">Example Request</h4>
+        <pre class="bg-[#1f2428] border border-dark-border rounded-md p-4 overflow-x-auto"><code class="text-sm font-mono">{
+  "url": "https://pinterest.com/username/board-name",
+  "pins": 10
+}</code></pre>
+
+        <h4 class="text-sm font-semibold text-gray-300 uppercase tracking-wide mt-5 mb-3">Example Response</h4>
+        <pre class="bg-[#1f2428] border border-dark-border rounded-md p-4 overflow-x-auto"><code class="text-sm font-mono">{
+  "result": [
+    {
+      "src": "https://i.pinimg.com/...",
+      "alt": "Pin description"
+    },
+    ...
+  ]
+}</code></pre>
+    </div>
+</div>
+
+<!-- RUT Checker -->
+<div class="bg-dark-secondary border border-dark-border rounded-lg mb-6 overflow-hidden">
+    <div class="bg-dark-tertiary border-b border-dark-border px-5 py-4 flex items-center gap-4">
+        <span class="bg-green-500 text-black font-bold text-xs px-2.5 py-1 rounded uppercase">POST</span>
+        <code class="text-gray-200 font-mono">/api/scrape/rut</code>
+    </div>
+    <div class="p-5">
+        <p class="text-gray-400 mb-4">Looks up a Chilean RUT and returns the associated name information.</p>
+
+        <h4 class="text-sm font-semibold text-gray-300 uppercase tracking-wide mb-3">Request Body</h4>
+        <table class="w-full text-sm mb-4">
+            <thead>
+                <tr class="text-gray-500 text-xs uppercase tracking-wide">
+                    <th class="text-left py-2 pr-4">Parameter</th>
+                    <th class="text-left py-2 pr-4">Type</th>
+                    <th class="text-left py-2">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-t border-dark-border">
+                    <td class="py-3 pr-4"><code class="text-purple-400">rut</code> <span class="text-red-400 text-xs font-semibold">required</span></td>
+                    <td class="py-3 pr-4 text-orange-400">string</td>
+                    <td class="py-3 text-gray-400">Chilean RUT number</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4 class="text-sm font-semibold text-gray-300 uppercase tracking-wide mb-3">Example Request</h4>
+        <pre class="bg-[#1f2428] border border-dark-border rounded-md p-4 overflow-x-auto"><code class="text-sm font-mono">{
+  "rut": "12345678-9"
+}</code></pre>
+
+        <h4 class="text-sm font-semibold text-gray-300 uppercase tracking-wide mt-5 mb-3">Example Response</h4>
+        <pre class="bg-[#1f2428] border border-dark-border rounded-md p-4 overflow-x-auto"><code class="text-sm font-mono">{
+  "result": {
+    "full": "LASTNAME SECONDLAST FIRSTNAME MIDDLENAME",
+    "first": "FIRSTNAME",
+    "last": "LASTNAME",
+    "middle": "MIDDLENAME",
+    "secondLast": "SECONDLAST"
+  }
+}</code></pre>
+    </div>
+</div>
+
+<!-- MTG Metagame Scraper -->
+<div class="bg-dark-secondary border border-dark-border rounded-lg mb-6 overflow-hidden">
+    <div class="bg-dark-tertiary border-b border-dark-border px-5 py-4 flex items-center gap-4">
+        <span class="bg-green-500 text-black font-bold text-xs px-2.5 py-1 rounded uppercase">POST</span>
+        <code class="text-gray-200 font-mono">/api/scrape/mtg-metagame</code>
+    </div>
+    <div class="p-5">
+        <p class="text-gray-400 mb-4">Scrapes MTG Goldfish for current metagame data and saves it to a JSON file. Supports multiple formats.</p>
+
+        <h4 class="text-sm font-semibold text-gray-300 uppercase tracking-wide mb-3">Request Body</h4>
+        <table class="w-full text-sm mb-4">
+            <thead>
+                <tr class="text-gray-500 text-xs uppercase tracking-wide">
+                    <th class="text-left py-2 pr-4">Parameter</th>
+                    <th class="text-left py-2 pr-4">Type</th>
+                    <th class="text-left py-2">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-t border-dark-border">
+                    <td class="py-3 pr-4"><code class="text-purple-400">format</code> <span class="text-red-400 text-xs font-semibold">required</span></td>
+                    <td class="py-3 pr-4 text-orange-400">string</td>
+                    <td class="py-3 text-gray-400">MTG format: standard, modern, pioneer, pauper, legacy, vintage</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4 class="text-sm font-semibold text-gray-300 uppercase tracking-wide mb-3">Example Request</h4>
+        <pre class="bg-[#1f2428] border border-dark-border rounded-md p-4 overflow-x-auto"><code class="text-sm font-mono">{
+  "format": "standard"
+}</code></pre>
+
+        <h4 class="text-sm font-semibold text-gray-300 uppercase tracking-wide mt-5 mb-3">Example Response</h4>
+        <pre class="bg-[#1f2428] border border-dark-border rounded-md p-4 overflow-x-auto"><code class="text-sm font-mono">{
+  "result": {
+    "format": "standard",
+    "scrapedAt": "2024-01-15T03:00:00.000Z",
+    "decks": [
+      { "name": "Azorius Control", "percentage": 12.5 },
+      { "name": "Mono-Red Aggro", "percentage": 10.2 }
+    ]
+  }
+}</code></pre>
+    </div>
+</div>
+
+<!-- MTG Metagame Reader -->
+<div class="bg-dark-secondary border border-dark-border rounded-lg mb-6 overflow-hidden">
+    <div class="bg-dark-tertiary border-b border-dark-border px-5 py-4 flex items-center gap-4">
+        <span class="bg-blue-500 text-black font-bold text-xs px-2.5 py-1 rounded uppercase">GET</span>
+        <code class="text-gray-200 font-mono">/api/metagame/:format</code>
+    </div>
+    <div class="p-5">
+        <p class="text-gray-400 mb-4">Returns the saved metagame data for a given format. Run the scraper first to populate the data.</p>
+
+        <h4 class="text-sm font-semibold text-gray-300 uppercase tracking-wide mb-3">URL Parameters</h4>
+        <table class="w-full text-sm mb-4">
+            <thead>
+                <tr class="text-gray-500 text-xs uppercase tracking-wide">
+                    <th class="text-left py-2 pr-4">Parameter</th>
+                    <th class="text-left py-2 pr-4">Type</th>
+                    <th class="text-left py-2">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-t border-dark-border">
+                    <td class="py-3 pr-4"><code class="text-purple-400">format</code> <span class="text-red-400 text-xs font-semibold">required</span></td>
+                    <td class="py-3 pr-4 text-orange-400">string</td>
+                    <td class="py-3 text-gray-400">MTG format: standard, modern, pioneer, pauper, legacy, vintage</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4 class="text-sm font-semibold text-gray-300 uppercase tracking-wide mb-3">Example Request</h4>
+        <pre class="bg-[#1f2428] border border-dark-border rounded-md p-4 overflow-x-auto"><code class="text-sm font-mono">GET /api/metagame/standard</code></pre>
+
+        <h4 class="text-sm font-semibold text-gray-300 uppercase tracking-wide mt-5 mb-3">Example Response</h4>
+        <pre class="bg-[#1f2428] border border-dark-border rounded-md p-4 overflow-x-auto"><code class="text-sm font-mono">{
+  "result": {
+    "format": "standard",
+    "scrapedAt": "2024-01-15T03:00:00.000Z",
+    "decks": [
+      { "name": "Azorius Control", "percentage": 12.5 },
+      { "name": "Mono-Red Aggro", "percentage": 10.2 }
+    ]
+  }
+}</code></pre>
+    </div>
+</div>
+
+<h2 class="text-xl font-semibold mt-10 mb-6 pb-3 border-b border-dark-border">Error Responses</h2>
+<div class="bg-dark-secondary border border-dark-border rounded-lg p-5">
+    <p class="text-gray-400 mb-4">All endpoints return errors in the following format:</p>
+    <pre class="bg-[#1f2428] border border-dark-border rounded-md p-4 overflow-x-auto"><code class="text-sm font-mono">{
+  "status": "Error in validateBodyMiddleware",
+  "error": "\"url\" is required"
+}</code></pre>
+    <p class="text-gray-500 text-sm mt-4">HTTP Status Codes: <code class="text-purple-400">400</code> for validation errors, <code class="text-purple-400">500</code> for server errors.</p>
+</div>

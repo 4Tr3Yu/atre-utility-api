@@ -40,14 +40,33 @@ sudo apt-get install libatk1.0-0t64\
 - Response: A JSON array containing the scraped images with their src and alt attributes.
 
 ### RUT
-```POST /api/scrape/pinterest```
-- Description: Returns name of the person when given the url obtained from scaning the QR code from the CI
+```POST /api/scrape/rut```
+- Description: Returns name of the person when given the RUT number.
 - Request Body:
-	- ```url``` (string): The actual URL obtained from the CI
-- Response: TBD.
+	- ```rut``` (string): Chilean RUT number
+- Response: JSON with name parts (full, first, last, middle, secondLast).
 
+### MTG Metagame
+```POST /api/scrape/mtg-metagame```
+- Description: Scrapes MTG Goldfish for current metagame archetypes and saves to JSON.
+- Request Body:
+	- ```format``` (string): MTG format - standard, modern, pioneer, pauper, legacy, vintage
+- Response: JSON with format, scrapedAt timestamp, and array of decks with name and percentage.
 
+```GET /api/metagame/:format```
+- Description: Returns saved metagame data for a given format.
+- URL Parameter:
+	- ```format``` (string): MTG format - standard, modern, pioneer, pauper, legacy, vintage
+- Response: Same as scraper response (reads from saved JSON file).
+
+#### Cron Job
+The metagame scraper can run automatically on a schedule. To enable:
+```env
+ENABLE_METAGAME_CRON=true
+```
+Default schedule: Every Sunday at 3:00 AM (configurable via `METAGAME_CRON_SCHEDULE`).
 
 #### To Do
 
-- Do something with the templates 
+- Do something with the templates
+- Complete MTG Goldfish selectors for scraping

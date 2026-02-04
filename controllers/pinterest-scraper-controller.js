@@ -13,8 +13,7 @@ const scrape = async (req, res) => {
 
 const docs = (req, res) => {
 	res.render("layout", {
-		title: "Document 1",
-		body: '<%- include("docs/home.ejs") %>',
+		title: "API Documentation",
 	});
 };
 

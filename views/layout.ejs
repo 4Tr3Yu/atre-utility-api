@@ -4,22 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %></title>
-    <link rel="stylesheet" href="/main.css"> 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: {
+                            primary: '#0d1117',
+                            secondary: '#161b22',
+                            tertiary: '#21262d',
+                            border: '#30363d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <header>
-        <h1>Documentation</h1>
+<body class="bg-dark-primary text-gray-200 min-h-screen font-sans">
+    <header class="bg-dark-secondary border-b border-dark-border px-6 py-4 flex justify-between items-center">
+        <h1 class="text-xl font-semibold">Atre Utility API</h1>
         <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
+            <ul class="flex gap-6">
+                <li><a href="/api/docs" class="text-blue-400 hover:underline">Docs</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <% body %>
+    <main class="max-w-4xl mx-auto px-6 py-8">
+        <%- include('docs/home') %>
     </main>
-    <footer>
-        <p>Made with ❤️ by <a href="https://atre.dev">Atre</a></p>
+    <footer class="text-center py-8 text-gray-500 border-t border-dark-border mt-12">
+        <p>Made with love by <a href="https://atre.dev" class="text-blue-400 hover:underline">Atre</a></p>
     </footer>
 </body>
 </html>
