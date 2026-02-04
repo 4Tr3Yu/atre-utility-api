@@ -1,246 +1,997 @@
 {
   "format": "standard",
-  "scrapedAt": "2026-02-04T11:26:06.496Z",
+  "scrapedAt": "2026-02-04T23:31:26.171Z",
   "decks": [
     {
       "name": "Simic Ouroboroid",
-      "percentage": 14.7
+      "percentage": 14.4,
+      "count": 831,
+      "colors": [
+        "U",
+        "G"
+      ],
+      "keyCards": [
+        "Ouroboroid",
+        "Badgermole Cub",
+        "Quantum Riddler"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Ouroboroid-EOE-672.jpg",
+      "archetypeUrl": "/archetype/standard-simic-ouroboroid-woe"
     },
     {
       "name": "Izzet Lessons",
-      "percentage": 13.1
+      "percentage": 13.1,
+      "count": 752,
+      "colors": [
+        "U",
+        "R"
+      ],
+      "keyCards": [
+        "Gran-Gran",
+        "Artist's Talent",
+        "Monument to Endurance"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Gran-Gran-TLA-672.jpg",
+      "archetypeUrl": "/archetype/standard-izzet-lessons-woe"
     },
     {
       "name": "Dimir Midrange",
-      "percentage": 8.5
+      "percentage": 8.5,
+      "count": 487,
+      "colors": [
+        "U",
+        "B"
+      ],
+      "keyCards": [
+        "Kaito, Bane of Nightmares",
+        "Floodpits Drowner",
+        "Deep-Cavern Bat"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Kaito-Bane-of-Nightmares-borderless-DSK-672.jpg",
+      "archetypeUrl": "/archetype/standard-dimir-midrange-woe"
     },
     {
       "name": "Jeskai Control",
-      "percentage": 8.2
+      "percentage": 8.1,
+      "count": 464,
+      "colors": [
+        "W",
+        "U",
+        "R"
+      ],
+      "keyCards": [
+        "Get Lost",
+        "Consult the Star Charts",
+        "Day of Judgment"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Get-Lost-borderless-LCI-672.jpg",
+      "archetypeUrl": "/archetype/standard-jeskai-control-woe"
     },
     {
       "name": "Mono-Red Aggro",
-      "percentage": 5
+      "percentage": 5,
+      "count": 287,
+      "colors": [
+        "R"
+      ],
+      "keyCards": [
+        "Razorkin Needlehead",
+        "Hired Claw",
+        "Nova Hellkite"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Razorkin-Needlehead-DSK-672.jpg",
+      "archetypeUrl": "/archetype/standard-mono-red-aggro-woe"
     },
     {
       "name": "Sultai Reanimator",
-      "percentage": 4.2
+      "percentage": 4.1,
+      "count": 238,
+      "colors": [
+        "U",
+        "B",
+        "G"
+      ],
+      "keyCards": [
+        "Overlord of the Balemurk",
+        "Formidable Speaker",
+        "Deceit"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Overlord-of-the-Balemurk-extended-DSK-672.jpg",
+      "archetypeUrl": "/archetype/standard-sultai-reanimator-woe"
     },
     {
       "name": "Selesnya Landfall",
-      "percentage": 3.6
+      "percentage": 3.5,
+      "count": 201,
+      "colors": [
+        "W",
+        "G"
+      ],
+      "keyCards": [
+        "Mightform Harmonizer",
+        "Badgermole Cub",
+        "Icetill Explorer"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Mightform-Harmonizer-EOE-672.jpg",
+      "archetypeUrl": "/archetype/standard-selesnya-landfall-woe"
     },
     {
       "name": "Bant Airbending Combo",
-      "percentage": 3.4
+      "percentage": 3.4,
+      "count": 193,
+      "colors": [
+        "W",
+        "U",
+        "G"
+      ],
+      "keyCards": [
+        "Badgermole Cub",
+        "Appa, Steadfast Guardian",
+        "Aang, Swift Savior"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Badgermole-Cub-TLA-672.jpg",
+      "archetypeUrl": "/archetype/standard-bant-airbending-combo-woe"
     },
     {
       "name": "Boros Aggro",
-      "percentage": 2.7
+      "percentage": 2.7,
+      "count": 155,
+      "colors": [
+        "W",
+        "R"
+      ],
+      "keyCards": [
+        "Boros Charm",
+        "Slickshot Show-Off",
+        "Emberheart Challenger"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Boros-Charm-GTC-672.jpg",
+      "archetypeUrl": "/archetype/standard-boros-aggro-woe"
     },
     {
       "name": "4c Reanimator",
-      "percentage": 2.7
+      "percentage": 2.7,
+      "count": 153,
+      "colors": [
+        "U",
+        "B",
+        "R",
+        "G"
+      ],
+      "keyCards": [
+        "Overlord of the Balemurk",
+        "Superior Spider-Man",
+        "Bringer of the Last Gift"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Overlord-of-the-Balemurk-extended-DSK-672.jpg",
+      "archetypeUrl": "/archetype/standard-4c-reanimator-woe"
     },
     {
       "name": "Mono-Green Landfall",
-      "percentage": 2
+      "percentage": 2,
+      "count": 115,
+      "colors": [
+        "G"
+      ],
+      "keyCards": [
+        "Badgermole Cub",
+        "Icetill Explorer",
+        "Earthbender Ascension"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Badgermole-Cub-TLA-672.jpg",
+      "archetypeUrl": "/archetype/standard-mono-green-landfall-woe"
     },
     {
       "name": "Izzet Looting",
-      "percentage": 1.9
+      "percentage": 1.9,
+      "count": 108,
+      "colors": [
+        "U",
+        "R"
+      ],
+      "keyCards": [
+        "Duelist of the Mind",
+        "Quantum Riddler",
+        "Stormchaser's Talent"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Duelist-of-the-Mind-OTJ-672.jpg",
+      "archetypeUrl": "/archetype/standard-izzet-looting-woe"
     },
     {
       "name": "Temur Lessons",
-      "percentage": 1.6
+      "percentage": 1.6,
+      "count": 93,
+      "colors": [
+        "U",
+        "R",
+        "G"
+      ],
+      "keyCards": [
+        "Artist's Talent",
+        "Monument to Endurance",
+        "Stormchaser's Talent"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Artists-Talent-BLB-672.jpg",
+      "archetypeUrl": "/archetype/standard-temur-lessons-woe"
     },
     {
       "name": "Izzet Self-Bounce",
-      "percentage": 1.5
+      "percentage": 1.4,
+      "count": 83,
+      "colors": [
+        "U",
+        "R"
+      ],
+      "keyCards": [
+        "Quantum Riddler",
+        "Stormchaser's Talent",
+        "Thundertrap Trainer"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/gf/Quantum%2BRiddler%2B%255BEOE%255D.jpg",
+      "archetypeUrl": "/archetype/standard-izzet-self-bounce-woe"
     },
     {
       "name": "Azorius Control",
-      "percentage": 1.4
+      "percentage": 1.4,
+      "count": 80,
+      "colors": [
+        "W",
+        "U"
+      ],
+      "keyCards": [
+        "Get Lost",
+        "Consult the Star Charts",
+        "Day of Judgment"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Get-Lost-borderless-LCI-672.jpg",
+      "archetypeUrl": "/archetype/standard-azorius-control-woe"
     },
     {
       "name": "Allies",
-      "percentage": 1.2
+      "percentage": 1.2,
+      "count": 66,
+      "colors": [
+        "W",
+        "U",
+        "B",
+        "G"
+      ],
+      "keyCards": [
+        "Great Divide Guide",
+        "Earth King's Lieutenant",
+        "South Pole Voyager"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Great-Divide-Guide-TLA-672.jpg",
+      "archetypeUrl": "/archetype/standard-allies-woe"
     },
     {
       "name": "Boros Dragons",
-      "percentage": 1.1
+      "percentage": 1.1,
+      "count": 65,
+      "colors": [
+        "W",
+        "R"
+      ],
+      "keyCards": [
+        "Clarion Conqueror",
+        "Nova Hellkite",
+        "Magmatic Hellkite"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Clarion-Conqueror-TDM-672.jpg",
+      "archetypeUrl": "/archetype/standard-boros-dragons-woe"
     },
     {
       "name": "Jeskai Artifacts",
-      "percentage": 1
+      "percentage": 1,
+      "count": 59,
+      "colors": [
+        "W",
+        "U",
+        "R"
+      ],
+      "keyCards": [
+        "Simulacrum Synthesizer",
+        "Repurposing Bay",
+        "Pinnacle Starcage"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Simulacrum-Synthesizer-BIG-672.jpg",
+      "archetypeUrl": "/archetype/standard-jeskai-artifacts-woe"
     },
     {
       "name": "4c Toolbox",
-      "percentage": 1
+      "percentage": 1,
+      "count": 57,
+      "colors": [
+        "W",
+        "U",
+        "R",
+        "G"
+      ],
+      "keyCards": [
+        "Badgermole Cub",
+        "Quantum Riddler",
+        "Formidable Speaker"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Badgermole-Cub-TLA-672.jpg",
+      "archetypeUrl": "/archetype/standard-4c-toolbox-woe"
+    },
+    {
+      "name": "Izzet Spellementals",
+      "percentage": 1,
+      "count": 55,
+      "colors": [
+        "U",
+        "R"
+      ],
+      "keyCards": [
+        "Sunderflock",
+        "Winternight Stories",
+        "Eddymurk Crab"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Sunderflock-ECL-672.jpg",
+      "archetypeUrl": "/archetype/standard-izzet-spellementals-woe"
     },
     {
       "name": "Esper Self-Bounce",
-      "percentage": 1
+      "percentage": 0.9,
+      "count": 54,
+      "colors": [
+        "W",
+        "U",
+        "B"
+      ],
+      "keyCards": [
+        "Kaito, Bane of Nightmares",
+        "Stormchaser's Talent",
+        "Nowhere to Run"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Kaito-Bane-of-Nightmares-borderless-DSK-672.jpg",
+      "archetypeUrl": "/archetype/standard-esper-self-bounce-woe"
     },
     {
       "name": "Golgari Midrange",
-      "percentage": 0.8
+      "percentage": 0.8,
+      "count": 48,
+      "colors": [
+        "B",
+        "G"
+      ],
+      "keyCards": [
+        "Badgermole Cub",
+        "Sentinel of the Nameless City",
+        "Llanowar Elves"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Badgermole-Cub-TLA-672.jpg",
+      "archetypeUrl": "/archetype/standard-golgari-midrange-woe"
     },
     {
       "name": "Izzet Prowess",
-      "percentage": 0.8
+      "percentage": 0.8,
+      "count": 47,
+      "colors": [
+        "U",
+        "R"
+      ],
+      "keyCards": [
+        "Astrologian's Planisphere",
+        "Quantum Riddler",
+        "Stormchaser's Talent"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Astrologians-Planisphere-FIN-672.jpg",
+      "archetypeUrl": "/archetype/standard-izzet-prowess-woe"
     },
     {
       "name": "Mono-Red Leyline Aggro",
-      "percentage": 0.8
+      "percentage": 0.8,
+      "count": 45,
+      "colors": [
+        "R"
+      ],
+      "keyCards": [
+        "Slickshot Show-Off",
+        "Emberheart Challenger",
+        "Hired Claw"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Slickshot-Show-Off-OTJ-672.jpg",
+      "archetypeUrl": "/archetype/standard-mono-red-leyline-aggro-woe"
     },
     {
       "name": "4c Control",
-      "percentage": 0.8
+      "percentage": 0.8,
+      "count": 44,
+      "colors": [
+        "W",
+        "U",
+        "B",
+        "R"
+      ],
+      "keyCards": [
+        "Inevitable Defeat",
+        "Consult the Star Charts",
+        "Lightning Helix"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Inevitable-Defeat-TDM-672.jpg",
+      "archetypeUrl": "/archetype/standard-4c-control-woe"
     },
     {
       "name": "Bant Omniscience",
-      "percentage": 0.6
+      "percentage": 0.6,
+      "count": 36,
+      "colors": [
+        "W",
+        "U",
+        "G"
+      ],
+      "keyCards": [
+        "Stock Up",
+        "Omniscience",
+        "Marang River Regent"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Stock-Up-DFT-672.jpg",
+      "archetypeUrl": "/archetype/standard-bant-omniscience-woe"
     },
     {
       "name": "Azorius Tempo",
-      "percentage": 0.6
-    },
-    {
-      "name": "Golgari Ouroboroid",
-      "percentage": 0.6
+      "percentage": 0.6,
+      "count": 35,
+      "colors": [
+        "W",
+        "U"
+      ],
+      "keyCards": [
+        "Voice of Victory",
+        "Enduring Curiosity",
+        "Aven Interrupter"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Voice-of-Victory-TDM-672.jpg",
+      "archetypeUrl": "/archetype/standard-azorius-tempo-woe"
     },
     {
       "name": "Temur Ouroboroid",
-      "percentage": 0.6
+      "percentage": 0.6,
+      "count": 33,
+      "colors": [
+        "U",
+        "R",
+        "G"
+      ],
+      "keyCards": [
+        "Badgermole Cub",
+        "Quantum Riddler",
+        "Ouroboroid"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Badgermole-Cub-TLA-672.jpg",
+      "archetypeUrl": "/archetype/standard-temur-ouroboroid-woe"
+    },
+    {
+      "name": "Golgari Ouroboroid",
+      "percentage": 0.6,
+      "count": 32,
+      "colors": [
+        "B",
+        "G"
+      ],
+      "keyCards": [
+        "Badgermole Cub",
+        "Ouroboroid",
+        "Overlord of the Balemurk"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Badgermole-Cub-TLA-672.jpg",
+      "archetypeUrl": "/archetype/standard-golgari-ouroboroid-woe"
     },
     {
       "name": "Sultai Elementals",
-      "percentage": 0.5
+      "percentage": 0.5,
+      "count": 28,
+      "colors": [
+        "U",
+        "B",
+        "G"
+      ],
+      "keyCards": [
+        "Wistfulness",
+        "Formidable Speaker",
+        "Deceit"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Wistfulness-ECL-672.jpg",
+      "archetypeUrl": "/archetype/standard-sultai-elementals-woe"
     },
     {
       "name": "5c Control",
-      "percentage": 0.4
+      "percentage": 0.4,
+      "count": 25,
+      "colors": [
+        "W",
+        "U",
+        "B",
+        "R",
+        "G"
+      ],
+      "keyCards": [
+        "Consult the Star Charts",
+        "Ancient Cornucopia",
+        "Jeskai Revelation"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/gf/Consult%2Bthe%2BStar%2BCharts%2B%253Cextended%253E%2B%255BEOE%255D.jpg",
+      "archetypeUrl": "/archetype/standard-5c-control-woe"
     },
     {
       "name": "Dimir Self-Bounce",
-      "percentage": 0.4
+      "percentage": 0.4,
+      "count": 24,
+      "colors": [
+        "U",
+        "B"
+      ],
+      "keyCards": [
+        "Boomerang Basics",
+        "Quantum Riddler",
+        "Kaito, Bane of Nightmares"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Boomerang-Basics-TLA-672.jpg",
+      "archetypeUrl": "/archetype/standard-dimir-self-bounce-woe"
     },
     {
       "name": "Boros Burn",
-      "percentage": 0.4
+      "percentage": 0.4,
+      "count": 22,
+      "colors": [
+        "W",
+        "R"
+      ],
+      "keyCards": [
+        "Boros Charm",
+        "Slickshot Show-Off",
+        "Emberheart Challenger"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Boros-Charm-GTC-672.jpg",
+      "archetypeUrl": "/archetype/standard-boros-burn-woe"
     },
     {
       "name": "Temur Kona",
-      "percentage": 0.4
-    },
-    {
-      "name": "Bant Ouroboroid",
-      "percentage": 0.3
-    },
-    {
-      "name": "Jeskai Self-Bounce",
-      "percentage": 0.3
+      "percentage": 0.4,
+      "count": 21,
+      "colors": [
+        "U",
+        "R",
+        "G"
+      ],
+      "keyCards": [
+        "Formidable Speaker",
+        "Stock Up",
+        "Omniscience"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Formidable-Speaker-ECL-672.jpg",
+      "archetypeUrl": "/archetype/standard-temur-kona-woe"
     },
     {
       "name": "Dimir Control",
-      "percentage": 0.3
+      "percentage": 0.4,
+      "count": 21,
+      "colors": [
+        "U",
+        "B"
+      ],
+      "keyCards": [
+        "Three Steps Ahead",
+        "Consult the Star Charts",
+        "Requiting Hex"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Three-Steps-Ahead-OTJ-672.jpg",
+      "archetypeUrl": "/archetype/standard-dimir-control-woe"
+    },
+    {
+      "name": "Jeskai Self-Bounce",
+      "percentage": 0.3,
+      "count": 19,
+      "colors": [
+        "W",
+        "U",
+        "R"
+      ],
+      "keyCards": [
+        "Stormchaser's Talent",
+        "Clarion Conqueror",
+        "Boomerang Basics"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Stormchasers-Talent-BLB-672.jpg",
+      "archetypeUrl": "/archetype/standard-jeskai-self-bounce-woe"
+    },
+    {
+      "name": "Bant Ouroboroid",
+      "percentage": 0.3,
+      "count": 19,
+      "colors": [
+        "W",
+        "U",
+        "G"
+      ],
+      "keyCards": [
+        "Badgermole Cub",
+        "Quantum Riddler",
+        "Nature's Rhythm"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Badgermole-Cub-TLA-672.jpg",
+      "archetypeUrl": "/archetype/standard-bant-ouroboroid-woe"
     },
     {
       "name": "Orzhov Midrange",
-      "percentage": 0.3
+      "percentage": 0.3,
+      "count": 17,
+      "colors": [
+        "W",
+        "B"
+      ],
+      "keyCards": [
+        "Preacher of the Schism",
+        "Deep-Cavern Bat",
+        "Duress"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Preacher-of-the-Schism-LCI-672.jpg",
+      "archetypeUrl": "/archetype/standard-orzhov-midrange-woe"
     },
     {
       "name": "4c Omniscience",
-      "percentage": 0.3
-    },
-    {
-      "name": "Sultai Ouroboroid",
-      "percentage": 0.3
-    },
-    {
-      "name": "Boros Manufacturing",
-      "percentage": 0.3
+      "percentage": 0.3,
+      "count": 16,
+      "colors": [
+        "W",
+        "U",
+        "R",
+        "G"
+      ],
+      "keyCards": [
+        "Stock Up",
+        "Omniscience",
+        "Consult the Star Charts"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Stock-Up-DFT-672.jpg",
+      "archetypeUrl": "/archetype/standard-4c-omniscience-woe"
     },
     {
       "name": "Temur Stormsplitter",
-      "percentage": 0.3
+      "percentage": 0.3,
+      "count": 15,
+      "colors": [
+        "U",
+        "R",
+        "G"
+      ],
+      "keyCards": [
+        "Stormchaser's Talent",
+        "Enduring Vitality",
+        "Stormsplitter"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Stormchasers-Talent-BLB-672.jpg",
+      "archetypeUrl": "/archetype/standard-temur-stormsplitter-woe"
+    },
+    {
+      "name": "Boros Manufacturing",
+      "percentage": 0.3,
+      "count": 15,
+      "colors": [
+        "W",
+        "R"
+      ],
+      "keyCards": [
+        "Caretaker's Talent",
+        "Weapons Manufacturing",
+        "United Battlefront"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Caretakers-Talent-BLB-672.jpg",
+      "archetypeUrl": "/archetype/standard-boros-manufacturing-woe"
+    },
+    {
+      "name": "Sultai Ouroboroid",
+      "percentage": 0.3,
+      "count": 15,
+      "colors": [
+        "U",
+        "B",
+        "G"
+      ],
+      "keyCards": [
+        "Badgermole Cub",
+        "Nature's Rhythm",
+        "Llanowar Elves"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Badgermole-Cub-TLA-672.jpg",
+      "archetypeUrl": "/archetype/standard-sultai-ouroboroid-woe"
     },
     {
       "name": "Temur Floodcaller Combo",
-      "percentage": 0.2
-    },
-    {
-      "name": "Gruul Ouroboroid",
-      "percentage": 0.2
+      "percentage": 0.2,
+      "count": 14,
+      "colors": [
+        "U",
+        "R",
+        "G"
+      ],
+      "keyCards": [
+        "Valley Floodcaller",
+        "Badgermole Cub",
+        "Stormchaser's Talent"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Valley-Floodcaller-BLB-672.jpg",
+      "archetypeUrl": "/archetype/standard-temur-floodcaller-combo-woe"
     },
     {
       "name": "Rakdos Monument",
-      "percentage": 0.2
+      "percentage": 0.2,
+      "count": 14,
+      "colors": [
+        "B",
+        "R"
+      ],
+      "keyCards": [
+        "Moonshadow",
+        "Monument to Endurance",
+        "Bloodghast"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Moonshadow-ECL-672.jpg",
+      "archetypeUrl": "/archetype/standard-rakdos-monument-woe"
     },
     {
       "name": "Gruul Delirium",
-      "percentage": 0.2
+      "percentage": 0.2,
+      "count": 13,
+      "colors": [
+        "R",
+        "G"
+      ],
+      "keyCards": [
+        "Fear of Missing Out",
+        "Overprotect",
+        "Keen-Eyed Curator"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Fear-of-Missing-Out-DSK-672.jpg",
+      "archetypeUrl": "/archetype/standard-gruul-delirium-woe"
+    },
+    {
+      "name": "Gruul Ouroboroid",
+      "percentage": 0.2,
+      "count": 13,
+      "colors": [
+        "R",
+        "G"
+      ],
+      "keyCards": [
+        "Badgermole Cub",
+        "Ouroboroid",
+        "Vibrance"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Badgermole-Cub-TLA-672.jpg",
+      "archetypeUrl": "/archetype/standard-gruul-ouroboroid-woe"
     },
     {
       "name": "Lifegain",
-      "percentage": 0.2
+      "percentage": 0.2,
+      "count": 13,
+      "colors": [
+        "W",
+        "B"
+      ],
+      "keyCards": [
+        "Dark Confidant",
+        "Essence Channeler",
+        "Case of the Uneaten Feast"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Dark-Confidant-FIN-672.jpg",
+      "archetypeUrl": "/archetype/standard-lifegain-woe"
     },
     {
       "name": "4c Elementals",
-      "percentage": 0.2
+      "percentage": 0.2,
+      "count": 12,
+      "colors": [
+        "U",
+        "B",
+        "R",
+        "G"
+      ],
+      "keyCards": [
+        "Wistfulness",
+        "Vibrance",
+        "Sunderflock"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Wistfulness-ECL-672.jpg",
+      "archetypeUrl": "/archetype/standard-4c-elementals-woe"
     },
     {
       "name": "Mono-Green Aggro",
-      "percentage": 0.2
+      "percentage": 0.2,
+      "count": 12,
+      "colors": [
+        "G"
+      ],
+      "keyCards": [
+        "Frenzied Baloth",
+        "Agonasaur Rex",
+        "Synchronized Charge"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Frenzied-Baloth-EOE-672.jpg",
+      "archetypeUrl": "/archetype/standard-mono-green-aggro-woe"
     },
     {
       "name": "Gruul Landfall",
-      "percentage": 0.2
-    },
-    {
-      "name": "Temur Landfall",
-      "percentage": 0.2
+      "percentage": 0.2,
+      "count": 12,
+      "colors": [
+        "R",
+        "G"
+      ],
+      "keyCards": [
+        "Badgermole Cub",
+        "Icetill Explorer",
+        "Earthbender Ascension"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Badgermole-Cub-TLA-672.jpg",
+      "archetypeUrl": "/archetype/standard-gruul-landfall-woe"
     },
     {
       "name": "Mardu Control",
-      "percentage": 0.2
-    },
-    {
-      "name": "Mono-Black Midrange",
-      "percentage": 0.2
-    },
-    {
-      "name": "Esper Control",
-      "percentage": 0.2
+      "percentage": 0.2,
+      "count": 11,
+      "colors": [
+        "W",
+        "B",
+        "R"
+      ],
+      "keyCards": [
+        "Beseech the Mirror",
+        "Voice of Victory",
+        "Nowhere to Run"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Beseech-the-Mirror-WOE-672.jpg",
+      "archetypeUrl": "/archetype/standard-mardu-control-woe"
     },
     {
       "name": "Gruul Leyline Aggro",
-      "percentage": 0.2
+      "percentage": 0.2,
+      "count": 11,
+      "colors": [
+        "R",
+        "G"
+      ],
+      "keyCards": [
+        "Leyline of Resonance",
+        "Slickshot Show-Off",
+        "Pawpatch Recruit"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Leyline-of-Resonance-DSK-672.jpg",
+      "archetypeUrl": "/archetype/standard-gruul-leyline-aggro-woe"
     },
     {
-      "name": "Dimir Faeries",
-      "percentage": 0.2
+      "name": "Mono-Black Midrange",
+      "percentage": 0.2,
+      "count": 11,
+      "colors": [
+        "B"
+      ],
+      "keyCards": [
+        "Bloodletter of Aclazotz",
+        "Bitterbloom Bearer",
+        "Unstoppable Slasher"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Bloodletter-of-Aclazotz-LCI-672.jpg",
+      "archetypeUrl": "/archetype/standard-mono-black-midrange-woe"
     },
     {
-      "name": "Boros Mice",
-      "percentage": 0.2
-    },
-    {
-      "name": "Mono-White Token Control",
-      "percentage": 0.2
-    },
-    {
-      "name": "Temur Battlecrier Combo",
-      "percentage": 0.2
+      "name": "Esper Control",
+      "percentage": 0.2,
+      "count": 11,
+      "colors": [
+        "W",
+        "U",
+        "B"
+      ],
+      "keyCards": [
+        "Consult the Star Charts",
+        "Riverchurn Monument",
+        "Day of Judgment"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/gf/Consult%2Bthe%2BStar%2BCharts%2B%255BEOE%255D.jpg",
+      "archetypeUrl": "/archetype/standard-esper-control-woe"
     },
     {
       "name": "Temur Elementals",
-      "percentage": 0.2
+      "percentage": 0.2,
+      "count": 10,
+      "colors": [
+        "U",
+        "R",
+        "G"
+      ],
+      "keyCards": [
+        "Roaming Throne",
+        "Wistfulness",
+        "Vibrance"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Roaming-Throne-borderless-LCI-672.jpg",
+      "archetypeUrl": "/archetype/standard-temur-elementals-woe"
     },
     {
-      "name": "Esper Midrange",
-      "percentage": 0.2
+      "name": "Mono-White Token Control",
+      "percentage": 0.2,
+      "count": 10,
+      "colors": [
+        "W"
+      ],
+      "keyCards": [
+        "Voice of Victory",
+        "Caretaker's Talent",
+        "Enduring Innocence"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Voice-of-Victory-TDM-672.jpg",
+      "archetypeUrl": "/archetype/standard-mono-white-token-control-woe"
+    },
+    {
+      "name": "Dimir Faeries",
+      "percentage": 0.2,
+      "count": 10,
+      "colors": [
+        "U",
+        "B"
+      ],
+      "keyCards": [
+        "Bitterbloom Bearer",
+        "Floodpits Drowner",
+        "Flitterwing Nuisance"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Bitterbloom-Bearer-ECL-672.jpg",
+      "archetypeUrl": "/archetype/standard-dimir-faeries-woe"
+    },
+    {
+      "name": "Boros Mice",
+      "percentage": 0.2,
+      "count": 10,
+      "colors": [
+        "W",
+        "R"
+      ],
+      "keyCards": [
+        "Emberheart Challenger",
+        "Hired Claw",
+        "Valley Questcaller"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Emberheart-Challenger-BLB-672.jpg",
+      "archetypeUrl": "/archetype/standard-boros-mice-woe"
+    },
+    {
+      "name": "Temur Battlecrier Combo",
+      "percentage": 0.2,
+      "count": 10,
+      "colors": [
+        "U",
+        "R",
+        "G"
+      ],
+      "keyCards": [
+        "Temur Battlecrier",
+        "Devastating Onslaught",
+        "Outcaster Trailblazer"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/gf/Temur%2BBattlecrier%2B%253Cbundle%253E%2B%255BTDM%255D.jpg",
+      "archetypeUrl": "/archetype/standard-temur-battlecrier-combo-woe"
+    },
+    {
+      "name": "5c Toolbox",
+      "percentage": 0.2,
+      "count": 9,
+      "colors": [
+        "W",
+        "U",
+        "B",
+        "R",
+        "G"
+      ],
+      "keyCards": [
+        "Badgermole Cub",
+        "Quantum Riddler",
+        "Nature's Rhythm"
+      ],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Badgermole-Cub-TLA-672.jpg",
+      "archetypeUrl": "/archetype/standard-5c-toolbox-woe"
     }
   ]
 }

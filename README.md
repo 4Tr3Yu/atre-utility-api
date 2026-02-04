@@ -53,7 +53,24 @@ sudo apt-get install libatk1.0-0t64\
 - Description: Scrapes MTG Goldfish for current metagame archetypes and saves to JSON.
 - Request Body:
 	- ```format``` (string): MTG format - standard, modern, pioneer, pauper, legacy, vintage
-- Response: JSON with format, scrapedAt timestamp, and array of decks with name and percentage.
+- Response: JSON with format, scrapedAt timestamp, and array of decks:
+```json
+{
+  "format": "standard",
+  "scrapedAt": "2024-02-04T12:00:00.000Z",
+  "decks": [
+    {
+      "name": "Simic Ouroboroid",
+      "percentage": 14.7,
+      "count": 839,
+      "colors": ["U", "G"],
+      "keyCards": ["Ouroboroid", "Badgermole Cub", "Quantum Riddler"],
+      "image": "https://cdn1.mtggoldfish.com/images/h/Ouroboroid-EOE-672.jpg",
+      "archetypeUrl": "/archetype/standard-simic-ouroboroid-woe"
+    }
+  ]
+}
+```
 
 ```GET /api/metagame/:format```
 - Description: Returns saved metagame data for a given format.

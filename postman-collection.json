@@ -86,7 +86,7 @@
 							"host": ["{{baseUrl}}"],
 							"path": ["api", "scrape", "mtg-metagame"]
 						},
-						"description": "Scrapes MTG Goldfish metagame data and saves to data/metagame/{format}.json.\n\n**Parameters:**\n- `format` (required): One of: `standard`, `modern`, `pioneer`, `pauper`, `legacy`, `vintage`"
+						"description": "Scrapes MTG Goldfish metagame data and saves to data/metagame/{format}.json.\n\n**Parameters:**\n- `format` (required): One of: `standard`, `modern`, `pioneer`, `pauper`, `legacy`, `vintage`\n\n**Response includes:**\n- `name`: Deck archetype name\n- `percentage`: Meta share %\n- `count`: Number of deck appearances\n- `colors`: Array of colors (WUBRG)\n- `keyCards`: Top 3 cards in the deck\n- `image`: Card art URL\n- `archetypeUrl`: Link to full archetype page"
 					},
 					"response": []
 				}

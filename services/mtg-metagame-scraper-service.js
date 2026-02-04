@@ -20,9 +20,6 @@ const mtgMetagameScraperService = async (format) => {
 		await page.goto(url, { waitUntil: "domcontentloaded" });
 		await page.waitForSelector(".archetype-tile", { timeout: 30000 });
 
-		// TODO: Add selectors for MTG Goldfish metagame page
-		// The page structure has deck tiles with name and percentage
-		// Example selectors (adjust based on actual page structure):
 		const decks = await page.$$eval(".archetype-tile", (tiles) => {
 			return tiles.map((tile) => {
 				const nameEl = tile.querySelector(
@@ -31,13 +28,59 @@ const mtgMetagameScraperService = async (format) => {
 				const percentEl = tile.querySelector(
 					".metagame-percentage .archetype-tile-statistic-value",
 				);
+				const countEl = tile.querySelector(
+					".archetype-tile-statistic-value-extra-data",
+				);
+				const colorEls = tile.querySelectorAll(".manacost i");
+				const cardEls = tile.querySelectorAll(
+					".archetype-tile-description ul li",
+				);
+				const imageEl = tile.querySelector(".card-image-tile");
+				const linkEl = tile.querySelector(".card-image-tile-link-overlay");
 
 				const name = nameEl?.textContent?.trim() || "Unknown";
 				const percentText =
 					percentEl?.childNodes[0]?.textContent?.trim() || "0%";
 				const percentage = parseFloat(percentText.replace("%", "")) || 0;
 
-				return { name, percentage };
+				const countText = countEl?.textContent?.trim() || "(0)";
+				const count = parseInt(countText.replace(/[()]/g, ""), 10) || 0;
+
+				const colorMap = {
+					"ms-w": "W",
+					"ms-u": "U",
+					"ms-b": "B",
+					"ms-r": "R",
+					"ms-g": "G",
+				};
+				const colors = Array.from(colorEls)
+					.map((el) => {
+						for (const [cls, color] of Object.entries(colorMap)) {
+							if (el.classList.contains(cls)) return color;
+						}
+						return null;
+					})
+					.filter(Boolean);
+
+				const keyCards = Array.from(cardEls).map(
+					(el) => el.textContent?.trim() || "",
+				);
+
+				const imageStyle = imageEl?.getAttribute("style") || "";
+				const imageMatch = imageStyle.match(/url\(['"]?([^'"]+)['"]?\)/);
+				const image = imageMatch ? imageMatch[1] : null;
+
+				const archetypeUrl = linkEl?.getAttribute("href") || null;
+
+				return {
+					name,
+					percentage,
+					count,
+					colors,
+					keyCards,
+					image,
+					archetypeUrl,
+				};
 			});
 		});
 
