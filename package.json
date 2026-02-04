@@ -1,7 +1,7 @@
 {
-  "name": "pinterest-scraper",
+  "name": "atre-utilities-api",
   "version": "1.0.0",
-  "description": "Personal utilities enpoint",
+  "description": "Personal utilities API for various tasks such as web scraping and data validation.",
   "author": {
     "name": "Atre",
     "email": "jorgef.aguir@gmail.com",
@@ -12,8 +12,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "set PORT=4343 && node index.js",
+    "dev": "set PORT=4343 && nodemon index.js"
   },
   "keywords": [],
   "license": "ISC",
