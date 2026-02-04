@@ -10,6 +10,11 @@
 			"key": "baseUrl",
 			"value": "http://localhost:3000",
 			"type": "string"
+		},
+		{
+			"key": "prodUrl",
+			"value": "https://atre-utility-api-production.up.railway.app",
+			"type": "string"
 		}
 	],
 	"item": [

@@ -1,6 +1,8 @@
-# Personal Utility Enpoint
+# Personal Utility Endpoint
 
 This Node.js service uses Playwright to scrape images from Pinterest boards dynamically. It scrolls down the page to load more content if necessary, ensuring that the specified number of images is collected.
+
+**Production URL:** https://atre-utility-api-production.up.railway.app
 
 ## Prerequisites
 
