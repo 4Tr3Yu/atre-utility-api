@@ -1,4 +1,4 @@
-import fs from "fs/promises";
+import fs from "node:fs/promises";
 import path from "path";
 import { chromium } from "playwright";
 import { fileURLToPath } from "url";
@@ -41,10 +41,10 @@ const mtgMetagameScraperService = async (format) => {
 				const name = nameEl?.textContent?.trim() || "Unknown";
 				const percentText =
 					percentEl?.childNodes[0]?.textContent?.trim() || "0%";
-				const percentage = parseFloat(percentText.replace("%", "")) || 0;
+				const percentage = Number.parseFloat(percentText.replace("%", "")) || 0;
 
 				const countText = countEl?.textContent?.trim() || "(0)";
-				const count = parseInt(countText.replace(/[()]/g, ""), 10) || 0;
+				const count = Number.parseInt(countText.replace(/[()]/g, ""), 10) || 0;
 
 				const colorMap = {
 					"ms-w": "W",

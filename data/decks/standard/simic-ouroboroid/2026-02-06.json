@@ -1,0 +1,293 @@
+{
+  "format": "standard",
+  "archetypeSlug": "simic-ouroboroid",
+  "scrapedAt": "2026-02-06T02:13:52.823Z",
+  "metadata": {
+    "name": "Simic Ouroboroid",
+    "author": "Simon Nielsen",
+    "date": "Jan 10, 2026",
+    "event": "[Lyon Sat 09:00] Magic Spotlight Series - Lyon 2026",
+    "placement": "1st Place",
+    "record": "15-2-1",
+    "deckId": null,
+    "sourceUrl": "/archetype/standard-simic-ouroboroid-woe"
+  },
+  "mainboard": [
+    {
+      "quantity": 1,
+      "name": "Craterhoof Behemoth"
+    },
+    {
+      "quantity": 1,
+      "name": "Reclamation Sage"
+    },
+    {
+      "quantity": 4,
+      "name": "Botanical Sanctum"
+    },
+    {
+      "quantity": 3,
+      "name": "Willowrush Verge"
+    },
+    {
+      "quantity": 2,
+      "name": "Bounce Off"
+    },
+    {
+      "quantity": 2,
+      "name": "Mockingbird"
+    },
+    {
+      "quantity": 7,
+      "name": "Forest"
+    },
+    {
+      "quantity": 1,
+      "name": "Sentinel of Lost Lore"
+    },
+    {
+      "quantity": 1,
+      "name": "Keen-Eyed Curator"
+    },
+    {
+      "quantity": 4,
+      "name": "Llanowar Elves"
+    },
+    {
+      "quantity": 4,
+      "name": "Badgermole Cub"
+    },
+    {
+      "quantity": 4,
+      "name": "Gene Pollinator"
+    },
+    {
+      "quantity": 4,
+      "name": "Breeding Pool"
+    },
+    {
+      "quantity": 4,
+      "name": "Nature's Rhythm"
+    },
+    {
+      "quantity": 1,
+      "name": "Marang River Regent"
+    },
+    {
+      "quantity": 4,
+      "name": "Multiversal Passage"
+    },
+    {
+      "quantity": 1,
+      "name": "Spider-Sense"
+    },
+    {
+      "quantity": 4,
+      "name": "Spider Manifestation"
+    },
+    {
+      "quantity": 4,
+      "name": "Ouroboroid"
+    },
+    {
+      "quantity": 4,
+      "name": "Quantum Riddler"
+    }
+  ],
+  "sideboard": [
+    {
+      "quantity": 2,
+      "name": "Scrapshooter"
+    },
+    {
+      "quantity": 2,
+      "name": "Surrak, Elusive Hunter"
+    },
+    {
+      "quantity": 1,
+      "name": "Disdainful Stroke"
+    },
+    {
+      "quantity": 1,
+      "name": "Unable to Scream"
+    },
+    {
+      "quantity": 2,
+      "name": "Keen-Eyed Curator"
+    },
+    {
+      "quantity": 2,
+      "name": "Meltstrider's Resolve"
+    },
+    {
+      "quantity": 1,
+      "name": "Vivien Reid"
+    },
+    {
+      "quantity": 1,
+      "name": "Ba Sing Se"
+    },
+    {
+      "quantity": 1,
+      "name": "Spider-Sense"
+    },
+    {
+      "quantity": 2,
+      "name": "Soul-Guide Lantern"
+    }
+  ],
+  "breakdown": {
+    "creatures": [
+      {
+        "name": "Llanowar Elves",
+        "avgQuantity": 4,
+        "percentOfDecks": 100
+      },
+      {
+        "name": "Badgermole Cub",
+        "avgQuantity": 4,
+        "percentOfDecks": 100
+      },
+      {
+        "name": "Ouroboroid",
+        "avgQuantity": 3.9,
+        "percentOfDecks": 100
+      },
+      {
+        "name": "Gene Pollinator",
+        "avgQuantity": 4,
+        "percentOfDecks": 100
+      },
+      {
+        "name": "Quantum Riddler",
+        "avgQuantity": 3.9,
+        "percentOfDecks": 99
+      },
+      {
+        "name": "Mockingbird",
+        "avgQuantity": 2.8,
+        "percentOfDecks": 98
+      },
+      {
+        "name": "Craterhoof Behemoth",
+        "avgQuantity": 1,
+        "percentOfDecks": 98
+      },
+      {
+        "name": "Spider Manifestation",
+        "avgQuantity": 4,
+        "percentOfDecks": 98
+      },
+      {
+        "name": "Marang River Regent",
+        "avgQuantity": 1,
+        "percentOfDecks": 63
+      },
+      {
+        "name": "Keen-Eyed Curator",
+        "avgQuantity": 1,
+        "percentOfDecks": 40
+      },
+      {
+        "name": "Reclamation Sage",
+        "avgQuantity": 1,
+        "percentOfDecks": 35
+      }
+    ],
+    "spells": [
+      {
+        "name": "Nature's Rhythm",
+        "avgQuantity": 3.9,
+        "percentOfDecks": 100
+      },
+      {
+        "name": "Spider-Sense",
+        "avgQuantity": 2,
+        "percentOfDecks": 89
+      }
+    ],
+    "lands": [
+      {
+        "name": "Botanical Sanctum",
+        "avgQuantity": 4,
+        "percentOfDecks": 100
+      },
+      {
+        "name": "Breeding Pool",
+        "avgQuantity": 4,
+        "percentOfDecks": 100
+      },
+      {
+        "name": "Forest",
+        "avgQuantity": 6.1,
+        "percentOfDecks": 100
+      },
+      {
+        "name": "Willowrush Verge",
+        "avgQuantity": 3.7,
+        "percentOfDecks": 100
+      },
+      {
+        "name": "Multiversal Passage",
+        "avgQuantity": 3.9,
+        "percentOfDecks": 94
+      }
+    ],
+    "sideboard": [
+      {
+        "name": "Keen-Eyed Curator",
+        "avgQuantity": 1.8,
+        "percentOfDecks": 92
+      },
+      {
+        "name": "Spider-Sense",
+        "avgQuantity": 1.6,
+        "percentOfDecks": 89
+      },
+      {
+        "name": "Surrak, Elusive Hunter",
+        "avgQuantity": 1.8,
+        "percentOfDecks": 79
+      },
+      {
+        "name": "Meltstrider's Resolve",
+        "avgQuantity": 2.3,
+        "percentOfDecks": 74
+      },
+      {
+        "name": "Unable to Scream",
+        "avgQuantity": 2.4,
+        "percentOfDecks": 59
+      },
+      {
+        "name": "Vivien Reid",
+        "avgQuantity": 1.3,
+        "percentOfDecks": 59
+      },
+      {
+        "name": "Soul-Guide Lantern",
+        "avgQuantity": 1.8,
+        "percentOfDecks": 53
+      },
+      {
+        "name": "Reclamation Sage",
+        "avgQuantity": 1.2,
+        "percentOfDecks": 49
+      },
+      {
+        "name": "Into the Flood Maw",
+        "avgQuantity": 2.1,
+        "percentOfDecks": 44
+      },
+      {
+        "name": "Scrapshooter",
+        "avgQuantity": 1.7,
+        "percentOfDecks": 36
+      }
+    ]
+  },
+  "prices": {
+    "paper": 891.87,
+    "online": 466.65
+  }
+}

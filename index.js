@@ -27,6 +27,11 @@ if (process.env.ENABLE_METAGAME_CRON === "true") {
 	import("./cron/metagame-cron.js");
 }
 
+// Optional: Enable deck cron job via environment variable
+if (process.env.ENABLE_DECK_CRON === "true") {
+	import("./cron/deck-cron.js");
+}
+
 app.listen(PORT, () => {
 	console.log(`Server is running on port ${PORT}`);
 });
